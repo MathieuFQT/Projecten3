@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EVA Challenge</string>
+    <string name="prompt_birthDate">Date de naissance</string>
+    <string name="prompt_fName">Prénom</string>
+    <string name="prompt_lName">Nom</string>
+    <string name="prompt_repeat_password">Répéter mot de passe</string>
+    <string name="register">Registrer</string>
+    <string name="prompt_password">Mot de passe</string>
+</resources>

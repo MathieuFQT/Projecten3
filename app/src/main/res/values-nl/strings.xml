@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EVA Challenge</string>
+    <string name="prompt_birthDate">Geboortedatum</string>
+    <string name="prompt_fName">Voornaam</string>
+    <string name="prompt_lName">Achternaam</string>
+    <string name="prompt_repeat_password">Herhaal wachtwoord</string>
+    <string name="register">Registreren</string>
+    <string name="prompt_password">Wachtwoord</string>
+</resources>
