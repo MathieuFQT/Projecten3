@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">EvaAndroid</string>
-    <string name="title_activity_login">Login</string>
+    <!-- BEGIN INLOGGEN -->
+    <string name="title_activity_login">Welkom</string>
+    <string name="text_title_login">Login</string>
 
+    <string name="text_email_login">E-mailadres</string>
+    <string name="text_wachtwoord_login">Wachtwoord</string>
+    <string name="text_button_login">Aanmelden</string>
+    <string name="id_email_login">txtEmail</string>
+    <string name="text_registreer_login">Registreer</string>
+    <!-- EIND INLOGGEN -->
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Home</string>
 </resources>
