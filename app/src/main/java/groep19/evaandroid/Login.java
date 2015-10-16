@@ -9,9 +9,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -57,6 +61,10 @@ public class Login extends AppCompatActivity {
         String emailadresApp = ((EditText) findViewById(R.id.txtEmail)).getText().toString();
         String wachtwoordApp = ((EditText) findViewById(R.id.txtPassword)).getText().toString();
 
+        // Geheugenplaatsen voorzien om emailadres en wachtwoord van REST api in op te slaan
+        String emailadresRest = "";
+        String wachtwoordRest = "";
+
         // Code om inloggen te doen werken zonder API
         boolean emailadresBestaat = emailadresApp.equals("test@test.com");
         String wachtwoordDb = "w8Woord!";
@@ -66,16 +74,30 @@ public class Login extends AppCompatActivity {
         // op te roepen methode : /api/login
         Ion.with(getApplicationContext())
                 .load("http://localhost:3000/api/login")
-                .setBodyParameter("identifier", "foo")
-                .setBodyParameter("email", "foo@foo.com")
-                .setBodyParameter("password", "p@ssw0rd")
+                .setBodyParameter("mail", emailadresApp)
+                .setBodyParameter("wachtwoord", wachtwoordApp)
                 .asString()
                 .setCallback(new FutureCallback<String>() {
                     @Override
                     public void onCompleted(Exception e, String result) {
-                        // Result
+                        try {
+                            JSONObject json = new JSONObject(result);    // Converts the string "result" to a JSONObject
+                            String json_result = json.getString("status"); // Get the string "result" inside the Json-object
+                            if (json_result.equalsIgnoreCase("200")){ // Checks if the "result"-string is equals to "ok"
+                                String log = ("test");
+                                // Result is "OK"
+                            } else {
+                                // Result is NOT "OK"
+
+                            }
+                        } catch (JSONException ex){
+                            // This method will run if something goes wrong with the json, like a typo to the json-key or a broken JSON.
+
+                        }
                     }
                 });
+
+        // body uit response object halen en uitlezen
 
 
         // Wachtwoord valideren en object om te gaan naar het volgend scherm klaarzetten
