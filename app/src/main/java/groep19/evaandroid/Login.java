@@ -49,11 +49,12 @@ public class Login extends AppCompatActivity {
 
     public void LoginUser(View View)
     {
-        Log.i("test","test");
-        EditText txtEmailadres = (EditText) findViewById(R.id.txtEmail);
-        EditText txtWachtwoord = (EditText) findViewById(R.id.txtPassword);
-        String emailadres = txtEmailadres.getText().toString();
-        String wachtwoord = txtWachtwoord.getText().toString();
+        // Gegevens ophalen uit gui
+        String emailadres = ((EditText) findViewById(R.id.txtEmail)).getText().toString();
+        String wachtwoord = ((EditText) findViewById(R.id.txtPassword)).getText().toString();
+
+        // REST API CALL KOMT HIER
+
         Intent intent;
         if (emailadres.equals("test@test.com") && wachtwoord.equals("w8Woord!"))
         {
