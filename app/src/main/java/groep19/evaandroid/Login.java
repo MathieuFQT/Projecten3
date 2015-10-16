@@ -12,6 +12,7 @@ import android.widget.EditText;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import groep19.evaandroid.REST.RestApiCall;
 
 public class Login extends AppCompatActivity {
 
@@ -50,13 +51,25 @@ public class Login extends AppCompatActivity {
     public void LoginUser(View View)
     {
         // Gegevens ophalen uit gui
-        String emailadres = ((EditText) findViewById(R.id.txtEmail)).getText().toString();
-        String wachtwoord = ((EditText) findViewById(R.id.txtPassword)).getText().toString();
+        String emailadresApp = ((EditText) findViewById(R.id.txtEmail)).getText().toString();
+        String wachtwoordApp = ((EditText) findViewById(R.id.txtPassword)).getText().toString();
 
-        // REST API CALL KOMT HIER
+        // Code om inloggen te doen werken zonder API
+        boolean emailadresBestaat = emailadresApp.equals("test@test.com");
+        String wachtwoordDb = "w8Woord!";
 
+        // Code om inloggen te doen werken met API
+        // http://stackoverflow.com/questions/28549315/login-example-in-android-using-post-method-using-rest-api
+        // /api/login
+
+        RestApiCall restApiCall = new RestApiCall();
+
+
+
+
+        // Wachtwoord valideren en object om naar het volgend scherm klaarzetten
         Intent intent;
-        if (emailadres.equals("test@test.com") && wachtwoord.equals("w8Woord!"))
+        if (emailadresBestaat && wachtwoordApp.equals(wachtwoordDb))
         {
             intent = new Intent(this, Home.class);
         }
@@ -64,6 +77,11 @@ public class Login extends AppCompatActivity {
         {
             intent = new Intent(this, Login.class);
         }
+
+        // Doorsturen naar het juiste scherm
         startActivity(intent);
     }
+
+
+
 }
