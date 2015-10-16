@@ -10,9 +10,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.koushikdutta.async.future.FutureCallback;
+import com.koushikdutta.ion.Ion;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import groep19.evaandroid.REST.RestApiCall;
+//import groep19.evaandroid.REST.RestApiCall;
 
 public class Login extends AppCompatActivity {
 
@@ -60,14 +63,22 @@ public class Login extends AppCompatActivity {
 
         // Code om inloggen te doen werken met API
         // http://stackoverflow.com/questions/28549315/login-example-in-android-using-post-method-using-rest-api
-        // /api/login
+        // op te roepen methode : /api/login
+        Ion.with(getApplicationContext())
+                .load("http://localhost:3000/api/login")
+                .setBodyParameter("identifier", "foo")
+                .setBodyParameter("email", "foo@foo.com")
+                .setBodyParameter("password", "p@ssw0rd")
+                .asString()
+                .setCallback(new FutureCallback<String>() {
+                    @Override
+                    public void onCompleted(Exception e, String result) {
+                        // Result
+                    }
+                });
 
-        RestApiCall restApiCall = new RestApiCall();
 
-
-
-
-        // Wachtwoord valideren en object om naar het volgend scherm klaarzetten
+        // Wachtwoord valideren en object om te gaan naar het volgend scherm klaarzetten
         Intent intent;
         if (emailadresBestaat && wachtwoordApp.equals(wachtwoordDb))
         {

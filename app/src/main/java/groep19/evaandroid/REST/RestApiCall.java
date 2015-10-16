@@ -15,7 +15,7 @@ import java.net.URL;
 /**
  * Created by yannickvanhecke on 16/10/15.
  */
-public class RestApiCall extends AsyncTask<String, String, String>
+/*public class RestApiCall extends AsyncTask<String, String, String>
 {
 
     private emailVerificationResult parseXML( XmlPullParser parser ) throws XmlPullParserException, IOException {
@@ -108,4 +108,4 @@ public class RestApiCall extends AsyncTask<String, String, String>
 
         return resultToDisplay;
     }
-}
+}*/
