@@ -7,4 +7,12 @@
     <string name="prompt_repeat_password">Herhaal wachtwoord</string>
     <string name="register">Registreren</string>
     <string name="prompt_password">Wachtwoord</string>
+    <string name="title_activity_vragen_lijst">VragenLijst</string>
+    <string name="question1Before">Op welk niveau zie jij jezelf nu als vegetarier?  Hoe zie je jezelf als vegetariër? </string>
+    <string name="question2Before">Hoe vaak eet je vlees per week? </string>
+    <string name="question3Before">Hoe vaak ben je bereid om vegetarisch te eten</string>
+    <string name="question4Before">Eet je soms een vleesvervanger (Tofu, …)</string>
+    <string name="question5Before">Van welke vleesvervangers heb je al gehoord? </string>
+    <string name="submit">Verzend</string>
+    <string name="spinDefault">--Kies een antwoord--</string>
 </resources>
