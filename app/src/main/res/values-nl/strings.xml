@@ -15,4 +15,10 @@
     <string name="question5Before">Van welke vleesvervangers heb je al gehoord? </string>
     <string name="submit">Verzend</string>
     <string name="spinDefault">--Kies een antwoord--</string>
+    <string name="question3After">Denk je dat er nu iets in je eetgewoonten veranderd is?</string>
+    <string name="question4After">Is je mening rond vlees en milieu veranderd?</string>
+    <string name="question5After">Heb je veel bijgeleerd rond vegetarisme? </string>
+    <string name="question6After">Zou je dit een vriend aanraden? </string>
+    <string name="question1After">Op welk niveau zie jij jezelf nu als vegetarier?  Hoe zie je jezelf als vegetariër?</string>
+    <string name="question2After">Hoe vaak eet je vlees per week?</string>
 </resources>

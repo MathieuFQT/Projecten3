@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layVragenLstAft">
+
+    <!--vraag1-->
+    <TextView
+        android:id="@+id/lblVraag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question1After"
+        android:textSize="10pt"
+
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinChoiceVraag1"
+        android:prompt="@string/spinDefault"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <!--vraag2-->
+    <TextView
+        android:id="@+id/lblVraag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question2After"
+        android:textSize="10pt"
+
+        android:layout_marginTop="30dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinChoiceVraag2"
+        android:prompt="@string/spinDefault"
+        android:layout_marginTop="40dp"
+        />
+
+    <!--vraag3-->
+    <TextView
+        android:id="@+id/lblVraag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question3After"
+        android:textSize="10pt"
+
+        android:layout_marginTop="50dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinChoiceVraag3"
+
+        android:prompt="@string/spinDefault"
+        android:layout_marginTop="60dp" />
+
+    <!--vraag4-->
+    <TextView
+        android:id="@+id/lblVraag4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question4After"
+        android:textSize="10pt"
+
+        android:layout_marginTop="70dp"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:layout_marginTop="80dp"
+
+        />
+
+    <!--vraag5-->
+    <TextView
+        android:id="@+id/lblVraag5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question5After"
+        android:textSize="10pt"
+
+        android:layout_marginTop="90dp"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <!--vraag6-->
+    <TextView
+        android:id="@+id/lblVraag6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question6After"
+        android:textSize="10pt"
+
+        android:layout_marginTop="110dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinChoiceVraag4"
+
+        android:prompt="@string/spinDefault"
+        android:layout_marginTop="120dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:text="@string/submit"
+
+        android:layout_marginTop="130dp"
+        />
+
+</LinearLayout>

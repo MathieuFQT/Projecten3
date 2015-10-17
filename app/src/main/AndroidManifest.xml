@@ -13,6 +13,11 @@
             android:label="@string/title_activity_vragen_lijst"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".VragenLijstAfterActivity"
+            android:label="@string/title_activity_vragen_lijst_after"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
