@@ -9,12 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".VragenLijstActivity"
+            android:name=".QuestionListActivity"
             android:label="@string/title_activity_vragen_lijst"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name=".VragenLijstAfterActivity"
+            android:name=".QuestionListAfterActivity"
             android:label="@string/title_activity_vragen_lijst_after"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>

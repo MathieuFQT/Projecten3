@@ -11,7 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 
 
-public class VragenLijstActivity extends AppCompatActivity {
+public class QuestionListAfterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,15 +20,15 @@ public class VragenLijstActivity extends AppCompatActivity {
 
         setContentView(layout);
 
-       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
 
         fillSpinners(layout);
 
 
     }
-    
-    
+
+
     public void fillSpinners(RelativeLayout layout)
     {
 
@@ -45,8 +45,8 @@ public class VragenLijstActivity extends AppCompatActivity {
 
             if(v instanceof Spinner) {
                 spinNr++;
-                spinName="question"+spinNr+"Before";
-                awnserName="question"+spinNr+"Awnsers";
+                spinName="question"+spinNr+"After";
+                awnserName="question"+spinNr+"AwnsersAft";
 
                 spinID= Integer.parseInt(spinName);
                 awnserID= Integer.parseInt(awnserName);
@@ -66,10 +66,10 @@ public class VragenLijstActivity extends AppCompatActivity {
 
 
         }
-        
-    }
-    
 
-    
+    }
+
+
+
 
 }
