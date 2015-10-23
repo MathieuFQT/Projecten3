@@ -6,4 +6,6 @@
     <string name="prompt_repeat_password">Répéter mot de passe</string>
     <string name="register">Registrer</string>
     <string name="prompt_password">Mot de passe</string>
+    <string name="title_activity_vragen_lijst">Questionaire</string>
+    <string name="spinDefault">--Choisissez une réponse--</string>
 </resources>

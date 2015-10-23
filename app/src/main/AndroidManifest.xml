@@ -20,6 +20,16 @@
             android:name=".Home"
             android:label="@string/title_activity_home" >
         </activity>
+        <activity
+            android:name=".QuestionList"
+            android:label="@string/title_activity_vragen_lijst"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".QuestionListAfter"
+            android:label="@string/title_activity_vragen_lijst_after"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
     <permission android:name="android.permission.INTERNET"/>
 </manifest>

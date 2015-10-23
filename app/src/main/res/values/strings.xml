@@ -24,5 +24,88 @@
     <string name="id_email_login">txtEmail</string>
     <string name="text_registreer_login">Registreer</string>
     <!-- EIND INLOGGEN -->
+    <string name="title_activity_vragen_lijst">Questions</string>
+    <!--questionsbefore-->
+    <string name="question1Before">At what level do you see yourself now as vegetarian? How do you see yourself as a vegetarian?</string>
+    <string name="question2Before">How often do you eat meat in a week?</string>
+    <string name="question3Before">How often are you willing to eat vegetarian</string>
+    <string name="question4Before">Do you eat sometimes a meat substitute (Tofu, …)</string>
+    <string name="question5Before">Of which meat substitutes have you heard?</string>
+
+    <!--questionsafter-->
+    <string name="question1After">At what level do you see yourself now as vegetarian? How do you see yourself as a vegetarian?</string>
+    <string name="question2After">How often do you eat meat in a week?</string>
+    <string name="question3After">Do you think that your eating habits have changed?</string>
+    <string name="question4After">Did your opinion concerning meat and the environment change? </string>
+    <string name="question5After">Have you learned something new of vegetarianism</string>
+    <string name="question6After">Would you recommend this app to a friend</string>
+
+
+    <!--awnsersbefore-->
+    <string-array name="question1Awnsers">
+        <item>Beginner</item>
+        <item>Proficient</item>
+        <item>Expert</item>
+
+    </string-array>
+
+    <string-array name="question2Awnsers">
+        <item>Daily</item>
+        <item>5 times a week</item>
+        <item>2 – 3 times a week</item>
+        <item>once a week</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="question3Awnsers">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Every 2 weeks</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="question4Awnsers">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="question5Awnsers">
+        <item>Soy</item>
+        <item>Tofu</item>
+        <item>more needed</item>
+    </string-array>
+    <!--awnserafter-->
+
+    <string-array name="question1AwnsersAft">
+        <item>Beginner</item>
+        <item>Proficient</item>
+        <item>Expert</item>
+
+    </string-array>
+
+    <string-array name="question2AwnsersAft">
+        <item>Daily</item>
+        <item>5 times a week</item>
+        <item>2 – 3 times a week</item>
+        <item>once a week</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="question3AwnsersAft">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Every 2 weeks</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="question4AwnsersAft">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string name="submit">submit</string>
+    <string name="spinDefault">--Pick an awnser--</string>
+    <string name="title_activity_vragen_lijst_after">VragenLijstAfter</string>
 
 </resources>
